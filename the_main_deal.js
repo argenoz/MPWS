@@ -18,7 +18,9 @@ export function set(e)
 
 function MPWS()
 {
+	this.the_state = 0n;
 	this.just_clean = async (e)=> {
+		console.log(e);
 		while(e.childNodes.length!=0n)
 			e.removeChild(e.childNodes[0n]);
 	};
@@ -28,8 +30,7 @@ function MPWS()
 				document.body.removeChild(document.body.childNodes[0n]);
 	};
 	//the editor template
-	this.the_editor_template={};
-	let tmp = this.the_editor_template.create_new=()=>{
+	let tmp = (this.the_editor_template={}).create_new=()=>{
 			let main_window = document.createElement('div');
 			main_window.setAttribute('id','editor_main_window');
 			let tmp =0;
@@ -42,7 +43,57 @@ function MPWS()
 			menu_bar.appendChild(tmp);
 			(tmp = document.createElement('div')).setAttribute('id',"content_page");
 			main_window.appendChild(tmp);
-			return main_window;
+			return (this.the_editor_template.the = main_window);
+			};
+	this.the_editor_template.refresh=()=>{
+						this.just_clean(this.the_editor_template.the.childNodes[1n]);
+										};
+										
+	//notepad
+	this.notepad={};
+	this.notepad.create_new_list = ()=>
+		{
+			let tmp = document.createElement('div');
+			tmp.setAttribute("contenteditable",'true');
+			tmp.setAttribute("style","border-style:solid;border-width:2px;border-color:#5e6959;width:98%;height:98%;padding:auto auto auto auto ;");
+			tmp.setAttribute("id","notepad_edit_place");
+			return tmp;
+		}
+	this.notepad.create_notepad_menu = ()=>
+			{
+				let v,tmp=0;
+				v = document.createElement('div');
+				//v.setAttribute("style","wid");
+				(tmp = document.createElement("div")).innerText="Новый файл";//setAttribute("innerText","Новый файл");
+				v.appendChild(tmp);
+				
+				(tmp = document.createElement("div")).innerText="Сохранить";//setAttribute("innerText","Сохранить");
+				v.appendChild(tmp);
+				console.log(v);
+				return v;
+			};
+	
+	this.notepad.to_notepad = async()=>{
+			if(this.the_state==1n)
+				{
+					let tmp=0;
+					await this.just_clean(tmp=this.the_editor_template.the.childNodes[1n]);
+					tmp.appendChild(this.notepad.create_new_list());
+				}
+			else
+				{
+					(async()=>{
+					let tmp=0;
+					await this.just_clean(tmp=this.the_editor_template.the.childNodes[1n]);
+					tmp.appendChild(this.notepad.create_new_list());	
+					})();
+					(async()=>{
+						let tmp = 0;
+						await this.just_clean(tmp=this.the_editor_template.the.childNodes[0n].childNodes[1n]);
+						tmp.appendChild(this.notepad.create_notepad_menu());
+					})();
+					
+				}
 			};
 	
 	

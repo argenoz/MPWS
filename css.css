@@ -21,7 +21,11 @@
 }
 
 
-
+#edit_menu_bar, #edit_menu_bar *
+{
+	user-select:none;
+	
+}
 
 #edit_menu_bar
 {
@@ -44,9 +48,26 @@
 	padding: 10px 10px 10px 10px;
 }
 
+
+#edit_menu_bar > *>*
+{
+	display:flex;
+	flex-direction:row;
+	overflow-x:auto;
+	margin: auto auto auto auto;
+	
+}
+
+#edit_menu_bar > *>*>*
+{
+	padding: 5px 5px 5px 5px;
+}
+
+
 #content_page
 {
 	width:100%;
+	height:100%;
 	display:flex;
 	flex-direction:row;
 	
