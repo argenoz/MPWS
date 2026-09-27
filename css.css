@@ -1,0 +1,55 @@
+
+
+
+#editor_main_window
+{
+	height:98%;
+	width:98%;
+	position:relative;
+	display:grid;
+	grid-template-columns:100%;
+	grid-template-rows:100px auto;
+	margin: 10px 10px 10px 10px;
+}
+
+
+
+
+#editor_main_window *
+{
+	position:relative;
+}
+
+
+
+
+#edit_menu_bar
+{
+	display:grid;
+	width:100%;
+	height:90px;
+	margin: auto  auto  auto  auto ;
+	grid-template-columns:200px auto;
+	grid-template-rows:auto;
+}
+
+
+#edit_menu_bar > *
+{
+	display:flex;
+	height: 90%;
+	width:90%;
+	flex-direction:row;
+	overflow-x:auto;
+	padding: 10px 10px 10px 10px;
+}
+
+#content_page
+{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	
+}
+
+
