@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="the_plan.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.4694444"
+     inkscape:cx="92.125984"
+     inkscape:cy="147.1991"
+     inkscape:window-width="1280"
+     inkscape:window-height="949"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:none;stroke-width:0.1;stroke-dashoffset:5.68598;stroke:#000000;stroke-opacity:1;stroke-dasharray:none"
+       id="path1"
+       cx="18.482141"
+       cy="12.374999"
+       rx="13.660714"
+       ry="6.1607141" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.579px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0811242;stroke-dasharray:none;stroke-dashoffset:5.68598;stroke-opacity:1"
+       x="6.8259821"
+       y="10.623367"
+       id="text1"
+       transform="scale(0.80556556,1.2413639)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-size:4.579px;fill:#000000;fill-opacity:1;stroke-width:0.0811242"
+         x="6.8259821"
+         y="10.623367">начальное меню</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="слой_редакторов"
+     style="display:inline">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.39192;stroke-dasharray:none;stroke-dashoffset:5.68598;stroke-opacity:1"
+       id="rect1"
+       width="122.75093"
+       height="242.10808"
+       x="6.8745308"
+       y="27.231674" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.64444px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.499999;stroke-dasharray:none;stroke-dashoffset:5.68598;stroke-opacity:1"
+       x="10.714285"
+       y="35.142857"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="fill:#02b81f;fill-opacity:1;stroke:none;stroke-width:0.5"
+         x="10.714285"
+         y="35.142857">редакторы</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ef1912;stroke-width:0.216;stroke-dasharray:none;stroke-dashoffset:5.68598;stroke-opacity:1;marker-end:url(#Triangle)"
+       d="m 29.464285,16.607142 1.285714,7.607143"
+       id="path2" />
+    <g
+       inkscape:groupmode="layer"
+       id="layer3"
+       inkscape:label="слой_редакторов 1">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#ef1912;stroke-width:0.216;stroke-dasharray:1.296, 1.296;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect2"
+         width="25.607143"
+         height="21"
+         x="10.821428"
+         y="39.75" />
+    </g>
+  </g>
+</svg>
