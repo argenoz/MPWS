@@ -55,7 +55,7 @@ function MPWS()
 		{
 			let tmp = document.createElement('div');
 			tmp.setAttribute("contenteditable",'true');
-			tmp.setAttribute("style","border-style:solid;border-width:2px;border-color:#5e6959;width:98%;height:98%;padding:auto auto auto auto ;");
+			tmp.setAttribute("style","overflow:auto;border-style:solid;border-width:2px;border-color:#5e6959;width:98%;height:98%;padding:auto auto auto auto ;");
 			tmp.setAttribute("id","notepad_edit_place");
 			return tmp;
 		}
