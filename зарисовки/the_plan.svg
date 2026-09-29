@@ -23,17 +23,35 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="2.4694444"
-     inkscape:cx="92.125984"
-     inkscape:cy="147.1991"
+     inkscape:zoom="4.9388888"
+     inkscape:cx="237.80653"
+     inkscape:cy="211.48482"
      inkscape:window-width="1280"
      inkscape:window-height="949"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2" />
+     inkscape:current-layer="layer5" />
   <defs
      id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ArrowWideHeavy"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide, heavy arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="m 1,0 -3,3 h -2 l 3,-3 -3,-3 h 2 z"
+         id="path3" />
+    </marker>
     <marker
        style="overflow:visible"
        id="Triangle"
@@ -108,14 +126,162 @@
     <g
        inkscape:groupmode="layer"
        id="layer3"
-       inkscape:label="слой_редакторов 1">
-      <rect
-         style="fill:none;fill-opacity:1;stroke:#ef1912;stroke-width:0.216;stroke-dasharray:1.296, 1.296;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect2"
-         width="25.607143"
-         height="21"
-         x="10.821428"
-         y="39.75" />
+       inkscape:label="слой_редакторов 1"
+       style="display:inline">
+      <g
+         inkscape:groupmode="layer"
+         id="layer4"
+         inkscape:label="шаблонизатор_редактора"
+         style="display:inline">
+        <g
+           inkscape:groupmode="layer"
+           id="layer5"
+           inkscape:label="шаблон редактора"
+           style="display:inline">
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.216;stroke-dasharray:none;stroke-opacity:1"
+             id="rect4"
+             width="22.607141"
+             height="23.892857"
+             x="48.428574"
+             y="39.375"
+             inkscape:label="the_main_window" />
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.216;stroke-dasharray:none;stroke-opacity:1"
+             id="rect5"
+             width="20.25"
+             height="5.3035712"
+             x="49.500004"
+             y="40.5"
+             inkscape:label="the_menu_bar" />
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.216;stroke-dasharray:none;stroke-opacity:1"
+             id="rect6"
+             width="8.7321434"
+             height="4.3392854"
+             x="49.982143"
+             y="40.982143"
+             inkscape:label="main_menu" />
+          <rect
+             style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.216;stroke-dasharray:none;stroke-opacity:1"
+             id="rect6-1"
+             width="8.7321434"
+             height="4.3392854"
+             x="59.677135"
+             y="41.004772"
+             inkscape:label="partial_menu" />
+          <text
+             xml:space="preserve"
+             style="font-size:2.46944px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216;stroke-dasharray:none;stroke-opacity:1"
+             x="50.625004"
+             y="65.464287"
+             id="text6"><tspan
+               sodipodi:role="line"
+               id="tspan6"
+               style="font-size:2.46944px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216"
+               x="50.625004"
+               y="65.464287">the_main_window</tspan><tspan
+               sodipodi:role="line"
+               style="font-size:2.46944px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216"
+               x="50.625004"
+               y="68.551086"
+               id="tspan12">height: calc(100vh - 20px)</tspan><tspan
+               sodipodi:role="line"
+               style="font-size:2.46944px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216"
+               x="50.625004"
+               y="71.637886"
+               id="tspan13">width: calc(100vw - 30px)</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:2.11667px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216;stroke-dasharray:none;stroke-opacity:1"
+             x="49.403152"
+             y="47.850315"
+             id="text7"><tspan
+               sodipodi:role="line"
+               id="tspan7"
+               style="font-size:2.11667px;stroke-width:0.216"
+               x="49.403152"
+               y="47.850315">the_menu_bar(grid 1:2)</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:0.705556px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216;stroke-dasharray:none;stroke-opacity:1"
+             x="60.798553"
+             y="43.259785"
+             id="text8"><tspan
+               sodipodi:role="line"
+               id="tspan8"
+               style="font-size:0.705556px;stroke-width:0.216"
+               x="60.798553"
+               y="43.259785">partial_menu (flex row)</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:0.705556px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216;stroke-dasharray:none;stroke-opacity:1"
+             x="52.167938"
+             y="42.935707"
+             id="text8-6"><tspan
+               sodipodi:role="line"
+               id="tspan8-5"
+               style="font-size:0.705556px;stroke-width:0.216"
+               x="52.167938"
+               y="42.935707">the_main_menu</tspan></text>
+          <rect
+             style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.216;stroke-dasharray:none;stroke-opacity:1"
+             id="rect8"
+             width="20.682875"
+             height="13.637059"
+             x="49.699505"
+             y="48.941891"
+             inkscape:label="content_page" />
+          <text
+             xml:space="preserve"
+             style="font-size:2.82222px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.216;stroke-dasharray:none;stroke-opacity:1"
+             x="50.457123"
+             y="51.782948"
+             id="text9"><tspan
+               sodipodi:role="line"
+               id="tspan9"
+               style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216"
+               x="50.457123"
+               y="51.782948">content_page</tspan><tspan
+               sodipodi:role="line"
+               style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216"
+               x="50.457123"
+               y="55.310722"
+               id="tspan10">(flex row)</tspan><tspan
+               sodipodi:role="line"
+               style="font-size:2.82222px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216"
+               x="50.457123"
+               y="58.838497"
+               id="tspan11">overflow hidden</tspan></text>
+        </g>
+        <path
+           style="display:inline;fill:#000000;fill-opacity:1;stroke:#1214ef;stroke-width:0.216;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWideHeavy)"
+           d="m 37.285715,46.928571 h 10.5"
+           id="path4" />
+        <text
+           xml:space="preserve"
+           style="font-size:3.52778px;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';display:inline;fill:none;stroke:#ef1912;stroke-width:0.216;stroke-dasharray:1.296, 1.296"
+           x="13.5"
+           y="47.142857"
+           id="text3"><tspan
+             sodipodi:role="line"
+             id="tspan3"
+             style="font-size:3.52778px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216"
+             x="13.5"
+             y="47.142857">шаблонизатор</tspan><tspan
+             sodipodi:role="line"
+             style="font-size:3.52778px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.216"
+             x="13.5"
+             y="51.552582"
+             id="tspan4">редактора</tspan></text>
+        <rect
+           style="display:inline;fill:none;fill-opacity:1;stroke:#ef1912;stroke-width:0.216;stroke-dasharray:1.296, 1.296;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect2"
+           width="25.607143"
+           height="21"
+           x="10.821428"
+           y="39.75" />
+      </g>
     </g>
   </g>
 </svg>
