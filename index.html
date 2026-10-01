@@ -1,60 +1,30 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		
+		<link href="css.css" rel="stylesheet" />
 		<script>
-			let OBJ={};
-			let DY=1;
-			let blabla=1;
-			function delo()
-				{//<link rel="stylesheet" href="css.css" />
-				//return 0;
-				//let t = document.createElement('link');
-				//t.setAttribute("href","css.css");
-				//t.setAttribute("rel",'stylesheet');
-				//document.head.appendChild(t);
-				//return 0;
-				let just_init= async ()=>
-					{
-					
-					let xhr = new XMLHttpRequest();
-					xhr.open("GET",'the_main_deal.js');
-					xhr.onload=(e)=>{
-							let re = e.target.response;
-							let sc = [re,new Blob([re],{'type':"text/javascript"})];
-							sc.push(re=URL.createObjectURL(sc[1n]));
-							
-							//sc.push(await import(sc[2n]));
-							import(sc[2n]).then((e)=>{
-									
-									(DY={}).the_main_deal = e;
-									OBJ = {};
-									OBJ.DY = DY;
-									DY.the_main_deal.set(OBJ);
-									DY.the_main_deal.set_all((w)=>{blabla=w;});
-									document.body.appendChild(blabla.the_editor_template.create_new());
-									blabla.notepad.to_notepad();
-									});
-							
-							};
-					xhr.send();
-					};
-				let Lo =document.location.search; 
-				if(Lo==undefined)
-					just_init();
-				else
-					if(Lo.length==0n)
-						just_init();
-					else
-						{
-						let qwe=0;
-						document.cookie =(qwe=Lo.slice(1).replaceAll('&','; ')+"; max-age=3600"+"; domain="+document.location.hostname)+";";
-						console.log(qwe);
-						document.location = document.location.origin;
-						}
-				}
+			function delo(){
+			let qwe=()=>{let tmp = new XMLHttpRequest(); tmp.open("GET","./the_main_deal.js",false);tmp.send();tmp = tmp.response; tmp=[tmp,new Blob([tmp],{type:"text/javascript"})];tmp.push(URL.createObjectURL(tmp[1n]));return [tmp,import(tmp[2n])];};
+			let t = qwe()[1];
+			t.then((e)=>{
+			t=e;
+			
+			let m = t.get_MPWS();
+			m.just_init();
+			m.notepad.to_notepad();});
+			}
 		</script>
 	</head>
 	<body onload="delo()">
+		<div id="the_main_window">
+			<div id="the_menu_bar">
+				<div id="the_main_menu">
+				</div>
+				<div id="partial_menu">
+				</div>
+			</div>
+			<div id="content_page">
+			</div>
+		</div>
 	</body>
 </html>

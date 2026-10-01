@@ -14,88 +14,152 @@ export function set(e)
 	}
 //export function get(){return QQQ;}
 
-
+export function get_MPWS()
+	{
+		return new MPWS();
+	}
 
 function MPWS()
 {
-	this.the_state = 0n;
-	this.just_clean = async (e)=> {
-		console.log(e);
-		while(e.childNodes.length!=0n)
-			e.removeChild(e.childNodes[0n]);
-	};
 	
-	this.body_to_clean = async ()=>{
-			while(document.body.childNodes.length!=0n)
-				document.body.removeChild(document.body.childNodes[0n]);
-	};
-	//the editor template
-	let tmp = (this.the_editor_template={}).create_new=()=>{
-			let main_window = document.createElement('div');
-			main_window.setAttribute('id','editor_main_window');
-			let tmp =0;
-			(tmp = document.createElement('div')).setAttribute('id',"edit_menu_bar");
-			let menu_bar = tmp;
-			main_window.appendChild(tmp);
-			(tmp = document.createElement('div')).setAttribute('id',"main_menu_bar");
-			menu_bar.appendChild(tmp);
-			(tmp = document.createElement('div')).setAttribute('id',"the_editor_menu_bar");
-			menu_bar.appendChild(tmp);
-			(tmp = document.createElement('div')).setAttribute('id',"content_page");
-			main_window.appendChild(tmp);
-			return (this.the_editor_template.the = main_window);
-			};
-	this.the_editor_template.refresh=()=>{
-						this.just_clean(this.the_editor_template.the.childNodes[1n]);
-										};
-										
-	//notepad
-	this.notepad={};
-	this.notepad.create_new_list = ()=>
-		{
-			let tmp = document.createElement('div');
-			tmp.setAttribute("contenteditable",'true');
-			tmp.setAttribute("style","overflow:auto;border-style:solid;border-width:2px;border-color:#5e6959;width:98%;height:98%;padding:auto auto auto auto ;");
-			tmp.setAttribute("id","notepad_edit_place");
-			return tmp;
-		}
-	this.notepad.create_notepad_menu = ()=>
+	
+	
+	this.state = 0n;
+	this.ssylki = {c:100n,l:{p:null,n:null,leaf:[]}};
+	this.just_append = (e)=>{
+				let c = this.ssylki.c;
+				let le = this.ssylki.l;
+				if(le.leaf.length==c)
+					{
+						let tmp = {p:le,n:null,leaf:[]};
+						le.n=tmp;
+						this.ssylki.l=tmp;
+						this.just_append(e);
+					}
+				else
+					le.leaf.push(e);
+				};
+	this.just_clean = (e)=>
 			{
-				let v,tmp=0;
-				v = document.createElement('div');
-				//v.setAttribute("style","wid");
-				(tmp = document.createElement("div")).innerText="Новый файл";//setAttribute("innerText","Новый файл");
-				v.appendChild(tmp);
-				
-				(tmp = document.createElement("div")).innerText="Сохранить";//setAttribute("innerText","Сохранить");
-				v.appendChild(tmp);
-				console.log(v);
-				return v;
+				while(e.childNodes.length!=0n)
+					e.removeChild(e.childNodes[0n]);
 			};
-	
-	this.notepad.to_notepad = async()=>{
-			if(this.the_state==1n)
+	this.just_init = ()=>
+		{
+		let d = this.d = (e)=>
 				{
-					let tmp=0;
-					await this.just_clean(tmp=this.the_editor_template.the.childNodes[1n]);
-					tmp.appendChild(this.notepad.create_new_list());
-				}
-			else
-				{
-					(async()=>{
-					let tmp=0;
-					await this.just_clean(tmp=this.the_editor_template.the.childNodes[1n]);
-					tmp.appendChild(this.notepad.create_new_list());	
-					})();
-					(async()=>{
-						let tmp = 0;
-						await this.just_clean(tmp=this.the_editor_template.the.childNodes[0n].childNodes[1n]);
-						tmp.appendChild(this.notepad.create_notepad_menu());
-					})();
-					
-				}
-			};
+					let q = document.createElement('div');
+					q.setAttribute('id',e);
+					return q;
+				};
+		let st = this.struct={};
+		this.state=-1n;
+		let main_window = d('the_main_window');
+		st.main_window=main_window;
+		let the_menu_bar = d('the_menu_bar');
+		st.the_menu_bar=the_menu_bar;
+		let the_main_menu = d('the_main_menu');
+		st.the_main_menu=the_main_menu;
+		let partial_menu = d('partial_menu');
+		st.partial_menu=partial_menu;
+		let content_page = d('content_page');
+		st.content_page=content_page;
+		main_window.appendChild(the_menu_bar);
+		the_menu_bar.appendChild(the_main_menu);
+		the_menu_bar.appendChild(partial_menu);
+		main_window.appendChild(content_page);
+		this.just_clean(document.body);
+		document.body.appendChild(main_window);
+		
+		
+		};
 	
+	
+	
+	 this.notepad=
+		{
+			the_notepad:{pm:null,c:null},
+			to_notepad:()=>
+				{
+					let d = this.d;
+					let ETTO = this.notepad;
+					(async()=>
+						{
+							let q;
+							let knopy=1;
+							if(ETTO.the_notepad.pm==null)
+								{
+									let i = 0n,qwe=[document.createElement('div')];
+									while(i<3n)
+										{
+											i++;
+											let tmp = document.createElement('div');
+											tmp.setAttribute("class",'knopy');
+											qwe.push(tmp);
+										    qwe[0n].appendChild(tmp);
+										}
+									qwe[1n].innerText="Создать файл";
+									qwe[2n].innerText="Сохранить";
+									qwe[3n].innerText="ез действия";
+									q = ETTO.the_notepad.pm = qwe;
+								}
+							else
+								q = ETTO.the_notepad.pm;
+							this.just_clean(this.struct.partial_menu);
+							this.struct.partial_menu.appendChild(q[0n]);
+							
+							let novo, sohran;
+							
+							novo = ()=>
+									{
+										let qwe=ETTO.the_notepad.c = document.createElement('div');
+										qwe.setAttribute('style',"width:100%;height:100%;");
+										qwe.setAttribute('contenteditable',true);
+										this.just_clean(this.struct.content_page);
+										this.struct.content_page.appendChild(ETTO.the_notepad.c);
+									};
+							q[1n].addEventListener("click",async ()=>{novo();});
+							
+							q[2n].addEventListener('click',async()=>
+									{
+									let te = this.struct.content_page.childNodes[0n].innerText;
+									let blo = new Blob([te],{type:'text'});
+									let u = URL.createObjectURL(blo);
+									let a = document.createElement('a');
+									a.setAttribute('href',u);
+									a.download="text";
+									a.addEventListener('load',()=>
+											{
+												URL.revokeObjectURL(u);
+											});
+									a.click();
+									}
+									);
+							
+							
+							
+						})();
+					(async()=>
+						{
+							if(ETTO.the_notepad.c==null)
+								{
+								let qwe = ETTO.the_notepad.c = document.createElement('div');
+								qwe.setAttribute('style',"width:100%;height:100%;");
+								qwe.setAttribute('contenteditable',true);
+								}
+							this.just_clean(this.struct.content_page);
+							this.struct.content_page.appendChild(ETTO.the_notepad.c);
+							
+						})();
+				}
+		};
+	
+	
+	
+	this.createNew=()=>{return new MPWS();};
+			
+	
+	this.just_init();
 	
 }
 
